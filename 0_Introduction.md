@@ -16,7 +16,7 @@ Maven is a tool that manages your project for you.
 
 You control it using a file called: `pom.xml`
 
-### GRADLE ?
+#### GRADLE ?
 Gradle does the same job as Maven.  
 Difference:
 - It uses simpler looking code (not XML)
@@ -55,12 +55,7 @@ It is basically a zip file that contains many .class files + other resources.
 ![alt text](image-1.png)
 
 1. `.idea`: IntelliJ settings folder.
-2. `.mvn`: Maven wrapper files, Helps run Maven automatically.
-3. `pom.xml`: Spring Web is added, Dependencies are managed
+2. `.mvn`: Helps run Maven automatically.
+5. `src`: It has 2 sub folders main and testing
 4. `mvnw`: Runs Maven on Mac.
-5. `src`: 
-```
-src/main/java
-src/main/resources
-src/test/java
-```
+3. `pom.xml`: Dependencies are managed
