@@ -1,10 +1,11 @@
-# INTRO
+# INTRODUCTION
 
 ### start.spring.io ?
 It’s a website tool called Spring Initializr that helps you quickly create a new Spring Boot project for you.
 
 Instead of manually creating all the folders, files, build config, etc., you just choose a few options and it generates a ready-to-use starter project.
 
+---
 ![alt text](image.png)
 
 ---

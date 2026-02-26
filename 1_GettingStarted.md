@@ -1,41 +1,36 @@
-# Core Concepts
+# Why Spring ?
 
 Earlier we used to create objects from class
 
 
 `Car c = new Car` 
 
-Now we are externalizing object creation, asking spring to do it
-
-spring provides IOC Container which stores all these classes 
+Now we are externalizing object creation, asking spring to do it.  
+Spring provides IOC Container which stores all these classes.   
 
 ---
-### IOC 
+### IOC Container ?
 Inversion of control. 
 
-APPLICATION CONTEXT ?  
+**APPLICATION CONTEXT** ?  
 It is a way to achieve IOC container 
 
 We have to tell IOC where it has to scan for classes.  
-Not every class only @annoations.  
-Only takes those classes which are beans.  
+Not every class only with `@annoations`  
 
 ---
 ### ANNOTATIONS
-These can be over class, interface, methods, fields
+These can be over class, interface, methods, fields which have @something on top, also further called as beans.  
 
-- @Component : Tells to put that thing in IOC Container 
-- @SpringBootApplication : Does work of 3 annotations
-    - @Configuration
-    - @EnableAutoConfiguration
-    - @ComponentScan: Helps IOC contationer to find @Components 
-- @Autowired : When we are using one class object in other class, if we use old new method it gonna create 'n' instance, to avoid that  
-- @EnableAutoConfiguration : After ins
-- @RestController : Same like components + Additional Functionalities
-
----
-### BEAN ?
-In Spring objects are called as bean
+**TYPES** :-
+- `@Component` : Tells to put that thing in IOC Container 
+- `@SpringBootApplication` : Does work of 3 annotations
+    - `@Configuration`
+    - `@EnableAutoConfiguration`
+    - `@ComponentScan`: Helps IOC contationer to find @Components 
+- `@Autowired` : When we are using one class object in other class, if we use new keyword it gonna create 'n' instance, to avoid that  
+- `@EnableAutoConfiguration`
+- `@RestController` : Same like components + Additional Functionalities
 
 ---
 # Code Basics 
@@ -43,9 +38,9 @@ In Spring objects are called as bean
 ![alt text](image-2.png)
 
 - `@SpringBootApplication` the entry point of our application, only used with main class.  
-- You have to create file under base package `com.edigest.myFirstProject`
--  
+- You have to create file under base package.  
 
+---
 Suppose we have 2 classes in a single package, one class dependant on other
 
 ```java
